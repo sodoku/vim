@@ -10,8 +10,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'kien/ctrlp.vim'
-map <C-B> :CtrlPBuffer<CR>
-map <C-T> :CtrlPBufTag<CR>
+map <leader>bb :CtrlPBuffer<CR>
+map <leader>tt :CtrlPBufTag<CR>
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
@@ -19,7 +19,7 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'godlygeek/tabular'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
-map <leader>n :NERDTreeToggle <CR>
+map <leader>tn :NERDTreeToggle <CR>
 Bundle "scrooloose/nerdcommenter"
 Bundle "pangloss/vim-javascript"
 Bundle "kchmck/vim-coffee-script"
@@ -34,7 +34,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'honza/snipmate-snippets'
 
 Bundle 'majutsushi/tagbar'
-map <leader>t :TagbarToggle <CR>
+map <leader>tb :TagbarToggle <CR>
 
 Bundle 'sjl/badwolf'
 Bundle 'altercation/vim-colors-solarized'
