@@ -94,3 +94,6 @@ map <right> <nop>
 cmap w!! w !sudo tee % >/dev/null
 
 let g:ctrlp_open_new_file = 'n'
+
+set guioptions-=T
+set guioptions-=m
