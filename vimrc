@@ -2,6 +2,8 @@ let mapleader=","
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+" Install Vundler with:
+" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -17,7 +19,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/zencoding-vim'
 Bundle 'godlygeek/tabular'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 map <leader>tn :NERDTreeToggle <CR>
 Bundle "scrooloose/nerdcommenter"
@@ -38,6 +39,9 @@ map <leader>tb :TagbarToggle <CR>
 
 Bundle 'sjl/badwolf'
 Bundle 'altercation/vim-colors-solarized'
+
+python from powerline.bindings.vim import source_plugin; source_plugin()
+
 
 filetype plugin indent on     " required!
 
@@ -94,6 +98,8 @@ map <right> <nop>
 cmap w!! w !sudo tee % >/dev/null
 
 let g:ctrlp_open_new_file = 'n'
+
+set term=screen-256color
 
 set guioptions-=T
 set guioptions-=m
