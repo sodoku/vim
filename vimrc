@@ -82,9 +82,7 @@ set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
-set visualbell           " don't beep
-set noerrorbells         " don't beep
-
+set visualbell t_vb=
 set nobackup
 set noswapfile
 
@@ -99,7 +97,7 @@ cmap w!! w !sudo tee % >/dev/null
 
 let g:ctrlp_open_new_file = 'n'
 
-set term=screen-256color
+set term=gnome-256color
 
 set guioptions-=T
 set guioptions-=m
