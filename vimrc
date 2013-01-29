@@ -97,7 +97,6 @@ cmap w!! w !sudo tee % >/dev/null
 
 let g:ctrlp_open_new_file = 'n'
 
-set term=gnome-256color
 
 set guioptions-=T
 set guioptions-=m
