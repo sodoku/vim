@@ -40,7 +40,6 @@ map <leader>tb :TagbarToggle <CR>
 Bundle 'sjl/badwolf'
 Bundle 'altercation/vim-colors-solarized'
 
-python from powerline.bindings.vim import source_plugin; source_plugin()
 
 
 filetype plugin indent on     " required!
