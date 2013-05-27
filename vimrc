@@ -49,6 +49,11 @@ set mouse=a
 set number
 set hid " you can change buffers without saving
 
+map <leader>nh :nohlsearch <CR>
+nmap <Leader>bi :source ~/.vimrc<CR>:BundleInstall<CR>
+map <Leader>vi :tabe ~/.vimrc<CR>
+map <Leader>te :!npm test<CR>
+
 au FileType html                setlocal shiftwidth=2 tabstop=2
 
 syntax on
