@@ -86,6 +86,9 @@ set visualbell t_vb=
 set nobackup
 set noswapfile
 
+set splitbelow
+set splitright
+
 set pastetoggle=<F2>
 
 map <up> <nop>
@@ -96,6 +99,7 @@ map <right> <nop>
 cmap w!! w !sudo tee % >/dev/null
 
 let g:ctrlp_open_new_file = 'n'
+let g:ctrlp_working_path_mode = 'a'
 
 
 set guioptions-=T
