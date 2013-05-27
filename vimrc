@@ -40,6 +40,7 @@ map <leader>tb :TagbarToggle <CR>
 Bundle 'sjl/badwolf'
 Bundle 'altercation/vim-colors-solarized'
 
+Bundle 'jamescarr/snipmate-nodejs'
 
 
 filetype plugin indent on     " required!
