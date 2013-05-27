@@ -54,6 +54,8 @@ au FileType html                setlocal shiftwidth=2 tabstop=2
 syntax on
 colorscheme badwolf
 
+set wildmenu
+set wildmode=list:longest,full
 
 set laststatus=2         " always show statusline
 let g:Powerline_symbols = 'fancy'
