@@ -59,6 +59,8 @@ au FileType html                setlocal shiftwidth=2 tabstop=2
 syntax on
 colorscheme badwolf
 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 set wildmenu
 set wildmode=list:longest,full
 
