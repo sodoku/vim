@@ -42,6 +42,10 @@ Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'jamescarr/snipmate-nodejs'
 
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+set ttimeoutlen=200
 
 filetype plugin indent on     " required!
 
