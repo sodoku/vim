@@ -3,58 +3,63 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 " Install Vundler with:
-" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'kien/ctrlp.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+
+Plugin 'kien/ctrlp.vim'
 map <leader>bb :CtrlPBuffer<CR>
 map <leader>tt :CtrlPBufTag<CR>
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mattn/zencoding-vim'
-Bundle 'godlygeek/tabular'
-Bundle 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mattn/zencoding-vim'
+Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/nerdtree'
 map <leader>tn :NERDTreeToggle <CR>
-Bundle "scrooloose/nerdcommenter"
-Bundle "pangloss/vim-javascript"
-Bundle "kchmck/vim-coffee-script"
-"Bundle "wookiehangover/jshint.vim"
-Bundle "scrooloose/syntastic"
-Bundle "tpope/vim-surround"
-Bundle "mileszs/ack.vim"
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'mileszs/ack.vim'
 
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 map <leader>tb :TagbarToggle <CR>
 
-Bundle 'sjl/badwolf'
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'sjl/badwolf'
+Plugin 'altercation/vim-colors-solarized'
 
-Bundle 'jamescarr/snipmate-nodejs'
+Plugin 'jamescarr/snipmate-nodejs'
 
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 set ttimeoutlen=200
 
-filetype plugin indent on     " required!
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 
 set mouse=a
 set number
 set hid " you can change buffers without saving
 
 map <leader>nh :nohlsearch <CR>
-nmap <Leader>bi :source ~/.vimrc<CR>:BundleInstall<CR>
+nmap <Leader>bi :source ~/.vimrc<CR>:PluginInstall<CR>
 map <Leader>vi :tabe ~/.vimrc<CR>
 map <Leader>te :!npm test<CR>
 
@@ -66,7 +71,7 @@ colorscheme badwolf
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 set wildmenu
-set wildmode=list:longest,full
+set wildmode=longest,full
 
 set laststatus=2         " always show statusline
 let g:Powerline_symbols = 'fancy'
@@ -124,3 +129,5 @@ if &term =~ '256color'
   " See also http://snk.tuxfamily.org/log/vim-256color-bce.html
   set t_ut=
 endif
+
+set shortmess=a
