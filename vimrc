@@ -21,7 +21,7 @@ map <leader>tt :CtrlPBufTag<CR>
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'mattn/zencoding-vim'
+Plugin 'mattn/emmet-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdtree'
 map <leader>tn :NERDTreeToggle <CR>
