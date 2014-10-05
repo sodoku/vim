@@ -18,6 +18,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'kien/ctrlp.vim'
 map <leader>bb :CtrlPBuffer<CR>
 map <leader>tt :CtrlPBufTag<CR>
+map <leader>mm :CtrlPMRUFiles<CR>
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-easymotion'
