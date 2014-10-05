@@ -32,6 +32,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-unimpaired'
 
 Plugin 'tomtom/tlib_vim'
 " Track the engine.
