@@ -33,8 +33,19 @@ Plugin 'tpope/vim-surround'
 Plugin 'mileszs/ack.vim'
 
 Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 Plugin 'majutsushi/tagbar'
 map <leader>tb :TagbarToggle <CR>
