@@ -54,6 +54,8 @@ Plugin 'sjl/badwolf'
 Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'jamescarr/snipmate-nodejs'
+Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled = 1
 
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
@@ -142,3 +144,5 @@ if &term =~ '256color'
 endif
 
 set shortmess=a
+
+au BufRead,BufNewFile *.md set filetype=markdown
